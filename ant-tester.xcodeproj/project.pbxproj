@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA8462D14953859004B69B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8462C14953859004B69B0 /* UIKit.framework */; };
+		FBA8462F14953859004B69B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8462E14953859004B69B0 /* Foundation.framework */; };
+		FBA8463114953859004B69B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8463014953859004B69B0 /* CoreGraphics.framework */; };
+		FBA8463714953859004B69B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA8463514953859004B69B0 /* InfoPlist.strings */; };
+		FBA8463914953859004B69B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8463814953859004B69B0 /* main.m */; };
+		FBA8463D14953859004B69B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8463C14953859004B69B0 /* AppDelegate.m */; };
+		FBA8464014953859004B69B0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8463F14953859004B69B0 /* MasterViewController.m */; };
+		FBA8464614953859004B69B0 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA8464414953859004B69B0 /* MasterViewController.xib */; };
+		FBA8465014953991004B69B0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8464F14953991004B69B0 /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FBA84652149539AB004B69B0 /* WFConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA84651149539AB004B69B0 /* WFConnector.framework */; };
+		FBA84654149539C4004B69B0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA84653149539C4004B69B0 /* ExternalAccessory.framework */; };
+		FBA8465E1495C4C7004B69B0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA8465D1495C4C7004B69B0 /* GameKit.framework */; };
+		FBA8466B1495CC35004B69B0 /* PacketData.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8466A1495CC34004B69B0 /* PacketData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBA8462814953859004B69B0 /* ant-tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ant-tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA8462C14953859004B69B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBA8462E14953859004B69B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBA8463014953859004B69B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBA8463414953859004B69B0 /* ant-tester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ant-tester-Info.plist"; sourceTree = "<group>"; };
+		FBA8463614953859004B69B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBA8463814953859004B69B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA8463A14953859004B69B0 /* ant-tester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ant-tester-Prefix.pch"; sourceTree = "<group>"; };
+		FBA8463B14953859004B69B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA8463C14953859004B69B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA8463E14953859004B69B0 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FBA8463F14953859004B69B0 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		FBA8464514953859004B69B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		FBA8464F14953991004B69B0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FBA84651149539AB004B69B0 /* WFConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WFConnector.framework; path = ../../Examples/iOS/trunk/source/WahooFitness/dependencies/WFConnector.framework; sourceTree = "<group>"; };
+		FBA84653149539C4004B69B0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		FBA8465D1495C4C7004B69B0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		FBA846691495CC34004B69B0 /* PacketData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketData.h; sourceTree = "<group>"; };
+		FBA8466A1495CC34004B69B0 /* PacketData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA8462514953859004B69B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8465E1495C4C7004B69B0 /* GameKit.framework in Frameworks */,
+				FBA84654149539C4004B69B0 /* ExternalAccessory.framework in Frameworks */,
+				FBA84652149539AB004B69B0 /* WFConnector.framework in Frameworks */,
+				FBA8465014953991004B69B0 /* CoreBluetooth.framework in Frameworks */,
+				FBA8462D14953859004B69B0 /* UIKit.framework in Frameworks */,
+				FBA8462F14953859004B69B0 /* Foundation.framework in Frameworks */,
+				FBA8463114953859004B69B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA8461D14953859004B69B0 = {
+			isa = PBXGroup;
+			children = (
+				FBA8463214953859004B69B0 /* ant-tester */,
+				FBA8462B14953859004B69B0 /* Frameworks */,
+				FBA8462914953859004B69B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA8462914953859004B69B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8462814953859004B69B0 /* ant-tester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA8462B14953859004B69B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8465D1495C4C7004B69B0 /* GameKit.framework */,
+				FBA84653149539C4004B69B0 /* ExternalAccessory.framework */,
+				FBA84651149539AB004B69B0 /* WFConnector.framework */,
+				FBA8464F14953991004B69B0 /* CoreBluetooth.framework */,
+				FBA8462C14953859004B69B0 /* UIKit.framework */,
+				FBA8462E14953859004B69B0 /* Foundation.framework */,
+				FBA8463014953859004B69B0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBA8463214953859004B69B0 /* ant-tester */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8463B14953859004B69B0 /* AppDelegate.h */,
+				FBA8463C14953859004B69B0 /* AppDelegate.m */,
+				FBA8463E14953859004B69B0 /* MasterViewController.h */,
+				FBA8463F14953859004B69B0 /* MasterViewController.m */,
+				FBA8464414953859004B69B0 /* MasterViewController.xib */,
+				FBA846691495CC34004B69B0 /* PacketData.h */,
+				FBA8466A1495CC34004B69B0 /* PacketData.m */,
+				FBA8463314953859004B69B0 /* Supporting Files */,
+			);
+			path = "ant-tester";
+			sourceTree = "<group>";
+		};
+		FBA8463314953859004B69B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8463414953859004B69B0 /* ant-tester-Info.plist */,
+				FBA8463514953859004B69B0 /* InfoPlist.strings */,
+				FBA8463814953859004B69B0 /* main.m */,
+				FBA8463A14953859004B69B0 /* ant-tester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA8462714953859004B69B0 /* ant-tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA8464C14953859004B69B0 /* Build configuration list for PBXNativeTarget "ant-tester" */;
+			buildPhases = (
+				FBA8462414953859004B69B0 /* Sources */,
+				FBA8462514953859004B69B0 /* Frameworks */,
+				FBA8462614953859004B69B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ant-tester";
+			productName = "ant-tester";
+			productReference = FBA8462814953859004B69B0 /* ant-tester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA8461F14953859004B69B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "The Active Network Inc.";
+			};
+			buildConfigurationList = FBA8462214953859004B69B0 /* Build configuration list for PBXProject "ant-tester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBA8461D14953859004B69B0;
+			productRefGroup = FBA8462914953859004B69B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA8462714953859004B69B0 /* ant-tester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA8462614953859004B69B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8463714953859004B69B0 /* InfoPlist.strings in Resources */,
+				FBA8464614953859004B69B0 /* MasterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA8462414953859004B69B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8463914953859004B69B0 /* main.m in Sources */,
+				FBA8463D14953859004B69B0 /* AppDelegate.m in Sources */,
+				FBA8464014953859004B69B0 /* MasterViewController.m in Sources */,
+				FBA8466B1495CC35004B69B0 /* PacketData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBA8463514953859004B69B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA8463614953859004B69B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FBA8464414953859004B69B0 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA8464514953859004B69B0 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA8464A14953859004B69B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBA8464B14953859004B69B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA8464D14953859004B69B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Examples/iOS/trunk/source/WahooFitness/dependencies\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ant-tester/ant-tester-Prefix.pch";
+				INFOPLIST_FILE = "ant-tester/ant-tester-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FBA8464E14953859004B69B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Examples/iOS/trunk/source/WahooFitness/dependencies\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ant-tester/ant-tester-Prefix.pch";
+				INFOPLIST_FILE = "ant-tester/ant-tester-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA8462214953859004B69B0 /* Build configuration list for PBXProject "ant-tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8464A14953859004B69B0 /* Debug */,
+				FBA8464B14953859004B69B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA8464C14953859004B69B0 /* Build configuration list for PBXNativeTarget "ant-tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8464D14953859004B69B0 /* Debug */,
+				FBA8464E14953859004B69B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA8461F14953859004B69B0 /* Project object */;
+}
