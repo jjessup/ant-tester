@@ -23,15 +23,17 @@
 	IBOutlet UILabel *peerHeartRate;
 	IBOutlet UILabel *peerFootPod;
 	
+	IBOutlet UIButton *trackButton;
+	
 	IBOutlet UIActivityIndicatorView *spinner;
 	
-	WFHardwareConnector *hardwareConnector;
-	WFHeartrateConnection *heartRateConnection;
-	WFFootpodConnection *footPodConnection;
+	WFHardwareConnector		*hardwareConnector;
+	WFHeartrateConnection	*heartRateConnection;
+	WFFootpodConnection		*footPodConnection;
 	
-	GKSession *gkSession;
-	GKPeerPickerController *gkPickerCtrl;
-	NSMutableArray *gkPeers;
+	GKSession				*gkSession;
+	GKPeerPickerController	*gkPickerCtrl;
+	NSMutableArray			*gkPeers;
 }
 
 @property (nonatomic, retain) UIButton *detectAntDevices;
@@ -46,5 +48,7 @@
 
 - (IBAction)detectAntDevicesButtonPressed:(id)sender;
 - (IBAction)connectButtonPressed:(id)sender;
+
+- (IBAction)trackButtonPressed:(id)sender;
 
 @end

@@ -9,6 +9,8 @@
 #import "MasterViewController.h"
 #import "AppDelegate.h"
 #import "PacketData.h"
+#import "WorkoutExerciseView.h"
+#import "Workout.h"
 
 @implementation MasterViewController
 @synthesize detectAntDevices;
@@ -105,6 +107,21 @@
 {
     // Return YES for supported orientations
 	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)trackButtonPressed:(id)sender
+{
+	WorkoutExerciseView *wev = [[WorkoutExerciseView alloc] initWithNibName:@"WorkoutExerciseView" bundle:nil];
+	Workout *w = [[Workout alloc] init];
+	w.duration = 60;
+	wev.workout = w;
+	UINavigationController *navCtrl = [[[UINavigationController alloc] initWithRootViewController:wev] autorelease];
+	[navCtrl setNavigationBarHidden:YES];
+	
+	[self presentModalViewController:navCtrl animated:YES];
+	
+	[w release];
+	[wev release];
 }
 
 #pragma mark - GK Stuff
